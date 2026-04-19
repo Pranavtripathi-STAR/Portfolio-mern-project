@@ -1,12 +1,10 @@
 import React from "react";
 import "./About.css";
-import Jump from "react-reveal/Jump";
 import myPhoto from "../../assets/images/myPhoto.jpg";
 const About = () => {
   return (
     <>
-      <Jump>
-        <div className="about" id="about">
+<div className="about" id="about">
           <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
               <img
@@ -28,7 +26,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </Jump>
+
     </>
   );
 };
