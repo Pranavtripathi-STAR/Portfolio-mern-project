@@ -16,7 +16,7 @@ const sendEmailController = (req, res) => {
 
     //validation
     if (!name || !email || !msg) {
-      return res.status(500).send({
+      return res.status(400).send({
         success: false,
         message: "Please Provide All Fields",
       });
@@ -45,9 +45,9 @@ const sendEmailController = (req, res) => {
     return res.status(500).send({
       success: false,
       message: "Send Email API Error",
-      error,
     });
   }
 };
 
 module.exports = { sendEmailController };
+

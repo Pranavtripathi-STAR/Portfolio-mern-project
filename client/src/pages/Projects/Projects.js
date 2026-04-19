@@ -1,10 +1,11 @@
 import React from "react";
 import "./Projects.css";
 import Spin from "react-reveal/Spin";
+
 const Projects = () => {
   return (
     <>
-      <div className="continer project" id="projects">
+      <div className="container project" id="projects">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
           TOP RECENT PROJECTS
         </h2>
@@ -110,3 +111,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

@@ -5,18 +5,20 @@ import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+
 const Contact = () => {
-  const [name, setname] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
   //handle submit button
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!name || !email || !msg) {
+      toast.error("Please Provide all fields");
+      return;
+    }
     try {
-      if (!name || !email || !msg) {
-        toast.error("PLease Provide all fields");
-      }
       const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
         email,
@@ -25,20 +27,21 @@ const Contact = () => {
       //validation success
       if (res.data.success) {
         toast.success(res.data.message);
-        setname("");
+        setName("");
         setEmail("");
         setMsg("");
       } else {
         toast.error(res.data.message);
       }
     } catch (error) {
-      console.log(error);
+      toast.error(error.response?.data?.message || "Failed to send message");
+      console.error("Contact form error:", error);
     }
   };
 
   return (
     <>
-      <div className=" contact" id="contact">
+      <div className="contact" id="contact">
         <div className="card card0 border-0">
           <div className="row">
             <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
@@ -47,7 +50,7 @@ const Contact = () => {
                   <LightSpeed>
                     <img
                       src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
-                      alt="ocontact"
+                      alt="contact"
                       className="image"
                     />
                   </LightSpeed>
@@ -79,7 +82,7 @@ const Contact = () => {
                         placeholder="Enter your Name"
                         className="mb-3"
                         value={name}
-                        onChange={(e) => setname(e.target.value)}
+                        onChange={(e) => setName(e.target.value)}
                       />
                     </div>
                     <div className="row px-3">
@@ -119,3 +122,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
