@@ -7,7 +7,7 @@ client/node_modules/
 
 # build files
 build/
-client/build/
+#client/build/
 
 # logs
 npm-debug.log*
@@ -17,3 +17,5 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+TODO.md

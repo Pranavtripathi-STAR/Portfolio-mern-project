@@ -1,6 +1,11 @@
-# Backend Fix TODO
+## Progress
+- [x] Fixed react-reveal compile errors locally
+- [x] Fixed backend nodemailer typo
+- [x] Unignored client/build/ in .gitignore
+- [x] Added build/start scripts to root package.json
+- [x] Removed react-reveal imports/components from App.js, About.js
+- [ ] Remove from Menus.js, Contact.js, Home.js, Projects.js, Techstack.js (read files, then edit)
+- [ ] git add . commit -m "Fix deploy" push
+- [ ] Test npm run build local
+- [ ] Deploy Render
 
-- [x] Edit controllers/portfolioContoller.js: Replace nodemailer.createTransporter( with nodemailer.createTransport(
-- [x] cd Mern-Portfolio-Project && node server.js
-- [ ] Configure .env with API_SENDGRID=your_key
-- [ ] Test contact form

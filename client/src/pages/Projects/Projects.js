@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import Spin from "react-reveal/Spin";
 
 const Projects = () => {
   return (
@@ -19,91 +18,89 @@ const Projects = () => {
         </p>
         {/* card design */}
         <div className="row" id="ads">
-          <Spin>
-            <div className="col-md-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Full stack</span>
-                  <img
-                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                    alt="project1"
-                  />
+          <div className="col-md-4">
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Full stack</span>
+                <img
+                  src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
+                  alt="project1"
+                />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">Node</span>
+                <span className="card-detail-badge">Express</span>
+                <span className="card-detail-badge">react</span>
+                <span className="card-detail-badge">Mongodb</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h6 className="text-uppercase">
+                    Ed-Tech Website
+                  </h6>
                 </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">Node</span>
-                  <span className="card-detail-badge">Express</span>
-                  <span className="card-detail-badge">react</span>
-                  <span className="card-detail-badge">Mongodb</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h6 className="text-uppercase">
-                      Ed-Tech Website
-                    </h6>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://study-notion-mern-stack.netlify.app/"
-                  >
-                    View
-                  </a>
-                </div>
+                <a
+                  className="ad-btn"
+                  href="https://study-notion-mern-stack.netlify.app/"
+                >
+                  View
+                </a>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Full Stack</span>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
-                    alt="project2"
-                  />
-                </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">React Native</span>
+          </div>
+          <div className="col-md-4">
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Full Stack</span>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
+                  alt="project2"
+                />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">React Native</span>
 
-                  <span className="card-detail-badge">Next.js</span>
-                  <span className="card-detail-badge">Supabase</span>
+                <span className="card-detail-badge">Next.js</span>
+                <span className="card-detail-badge">Supabase</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h5 className="text-uppercase">Golf Platform Website</h5>
                 </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Golf Platform Website</h5>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://golf-platform-blond.vercel.app/"
-                  >
-                    View
-                  </a>
-                </div>
+                <a
+                  className="ad-btn"
+                  href="https://golf-platform-blond.vercel.app/"
+                >
+                  View
+                </a>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Frontend</span>
-                  <img
-                    src="https://www.nextwebi.com/assets/img/img-source/mobile-top-banner-28.png"
-                    alt="project1"
-                  />
-                </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">React</span>
-                  <span className="card-detail-badge">Tailwind</span>
+          </div>
+          <div className="col-md-4">
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Frontend</span>
+                <img
+                  src="https://www.nextwebi.com/assets/img/img-source/mobile-top-banner-28.png"
+                  alt="project1"
+                />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">React</span>
+                <span className="card-detail-badge">Tailwind</span>
 
-                  <span className="card-detail-badge">Fast API</span>
+                <span className="card-detail-badge">Fast API</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h5 className="text-uppercase">Modern Chair</h5>
                 </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Modern Chair</h5>
-                  </div>
-                  <a className="ad-btn" href="view">
-                    View
-                  </a>
-                </div>
+                <a className="ad-btn" href="view">
+                  View
+                </a>
               </div>
             </div>
-          </Spin>
+          </div>
         </div>
       </div>
     </>
